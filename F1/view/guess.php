@@ -7,7 +7,7 @@
         <button type="submit" class="btn btn-primary" class="m-1" name="list" id="list">List</button>
     </form>
     <thead>
-        <h1 style="text-align: center;">Top 5 Guess | Duration</h1>
+        <h1 style="text-align: center;">Top 5 Guess</h1>
         <tr>
             <th>Year:</th>
             <td style="color: blue;"><b><?= $yearInput ?></b></td>
@@ -17,7 +17,6 @@
         <tr>
             <th scope="col">Position</th>
             <th scope="col">Driver</th>
-            <th scope="col">Duration</th>
         </tr>
     </thead>
     <tbody>
@@ -26,7 +25,7 @@
 
         if (isset($_POST["list"])) {
 
-            if (isset($response->MRData->StandingsTable->StandingsLists[0]) || isset($response_2->MRData->RaceTable->Races[0])) {
+            if (isset($response->MRData->StandingsTable->StandingsLists[0])) {
 
                 for ($x = 0; $x < 5; $x++) {
 
@@ -34,13 +33,10 @@
 
                     if (!empty($standingLists->DriverStandings) || !empty($pitStop->duration)) {
                         $driverStandings = $standingLists->DriverStandings[$x];
-                        $pitStop = $response_2->MRData->RaceTable->Races[0]->PitStops[$x];
 
                         $position = $driverStandings->position;
                         $givenName = $driverStandings->Driver->givenName;
                         $familyName = $driverStandings->Driver->familyName;
-
-                        $duration = $pitStop->duration;
                     }
 
 
@@ -48,7 +44,6 @@
                     <tr>
                         <td><?= $position ?: ""; ?></td>
                         <td><?= $givenName . " " . $familyName ?: ""; ?></td>
-                        <td><?= $duration ?: ""; ?></td>
                     </tr>
         <?php
                 }

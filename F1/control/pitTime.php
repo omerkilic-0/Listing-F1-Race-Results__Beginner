@@ -10,7 +10,7 @@ if (isset($_POST["list"])) {
     $roundInput = $_POST['round'];
     $pitInput = $_POST['pitInput'];
 
-    include './model/pitTime.php';
+    include '../model/pitTime.php';
     curl_close($ch);
 
     if (isset($response->MRData->RaceTable->Races[0]->PitStops)) {
@@ -21,4 +21,4 @@ if (isset($_POST["list"])) {
     }
 }
 
-include './view/pitTime.php';
+include '../view/pitTime.php';

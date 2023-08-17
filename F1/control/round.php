@@ -9,7 +9,7 @@ if (isset($_POST["list"])) {
     $yearInput = $_POST['year'];
     $roundInput = $_POST['round'];
 
-    include './model/round.php';
+    include '../model/round.php';
 
     curl_close($ch);
 
@@ -20,4 +20,4 @@ if (isset($_POST["list"])) {
         echo '<div class="alert alert-danger" role="alert"><center>Wrong round.</center></div>';
     }
 }
-include './view/round.php'; ?>
+include '../view/round.php'; ?>

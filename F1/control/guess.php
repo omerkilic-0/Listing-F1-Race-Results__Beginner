@@ -9,12 +9,12 @@ if (isset($_POST["list"])) {
     $yearInput = $_POST['year'];
     $roundInput = $_POST['round'];
 
-    include './model/guess.php';
+    include '../model/guess.php';
 
-    if (!isset($response->MRData->StandingsTable->StandingsLists[0]) || !isset($response_2->MRData->RaceTable->Races[0])) {
+    if (!isset($response->MRData->StandingsTable->StandingsLists[0])) {
         echo '<div class="alert alert-danger" role="alert"><center>Wrong round.</center></div>';
     }
     curl_close($ch);
 }
 
-include './view/guess.php';
+include '../view/guess.php';

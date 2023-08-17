@@ -10,11 +10,11 @@ if (isset($_POST["list"])) {
     $yearInput = $_POST['year'];
     $pilotInput = $_POST['pilotInput'];
 
-    include './model/pilot_details.php';
+    include '../model/pilot_details.php';
 
     if (!isset($response->MRData->RaceTable->Races[0])) {
-        echo '<div class="alert alert-danger" role="alert"><center>Wrong round.</center></div>';
+        echo '<div class="alert alert-danger" role="alert"><center>Wrong pilot.</center></div>';
     }
     curl_close($ch);
 }
-include './view/pilot_details.php';
+include '../view/pilot_details.php';
