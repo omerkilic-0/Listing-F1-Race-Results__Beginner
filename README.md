@@ -45,3 +45,7 @@ In our model file, we take our API, i.e. .json link, and put the $yearInput and 
 We have an html body section in our view file, and we connect our header.php and footer.php pages with include in the beginning and end. After checking the isset with the button by typing the input sections in the body part, we start our for loop and increase the table rows as much as our for loop.
 # Application Information
 I developed this application during my internship at Train Payment Inc. (PAYGURU) from August 1st, 2023, to August 28th, 2023.
+# İmages
+![Ekran görüntüsü 2023-08-29 153650](https://github.com/omerkilic-0/Listing-F1-Race-Results__Beginner/assets/123635257/54325b47-f858-4e0f-91db-c3d4b1eaa935)
+![Ekran görüntüsü 2023-08-29 153606](https://github.com/omerkilic-0/Listing-F1-Race-Results__Beginner/assets/123635257/f6936bdc-7f9e-4199-ab34-ecb9100626b2)
+![Ekran görüntüsü 2023-08-29 153631](https://github.com/omerkilic-0/Listing-F1-Race-Results__Beginner/assets/123635257/f6b2fa45-434b-46f1-baec-5f43981da171)
