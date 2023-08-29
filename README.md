@@ -47,7 +47,7 @@ We have an html body section in our view file, and we connect our header.php and
 I developed this application during my internship at Train Payment Inc. (PAYGURU) from August 1st, 2023, to August 28th, 2023.
 # License
 This project is licensed under the MIT License. See the LICENSE.md file for details.
-# İmages
+# Images
 ![Ekran görüntüsü 2023-08-29 153650](https://github.com/omerkilic-0/Listing-F1-Race-Results__Beginner/assets/123635257/54325b47-f858-4e0f-91db-c3d4b1eaa935)
 ![Ekran görüntüsü 2023-08-29 153606](https://github.com/omerkilic-0/Listing-F1-Race-Results__Beginner/assets/123635257/f6936bdc-7f9e-4199-ab34-ecb9100626b2)
 ![Ekran görüntüsü 2023-08-29 153631](https://github.com/omerkilic-0/Listing-F1-Race-Results__Beginner/assets/123635257/f6b2fa45-434b-46f1-baec-5f43981da171)
