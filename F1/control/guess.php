@@ -1,7 +1,7 @@
 <?php
 
 //API gelen verilere varsayılan değer atıyoruz.
-$variabless = $duration =$constructorId = $standingLists = $driverStandings = $position = $givenName = $familyName = $constructorId = $yearInput = $roundInput = "";
+$variabless = $duration = $constructorId = $standingLists = $driverStandings = $position = $givenName = $familyName = $constructorId = $yearInput = $roundInput = "";
 
 //Butona basındı ise.
 if (isset($_POST["list"])) {

@@ -1,12 +1,14 @@
-<?php include 'partials/header.php';?>
+<?php include 'partials/header.php'; ?>
 
-<table class="table">
-    <form method="POST" style="float: left;">
-        <input type="number" name="year" id="year" class="m-2" style="border-radius: 3px; width: 150px;" placeholder="Year (2003-2023)" min="2003" max="2023" required>
-        <input type="text" name="pilotInput" id="pilotInput" class="m-2" style="border-radius: 3px; width: 150px;" placeholder="Pilot" min="1" required>
-        <button type="submit" class="btn btn-primary" class="m-1" name="list" id="list">List</button>
-    </form>
-    <thead>
+    <table class="table">
+        <form method="POST" style="float: left;">
+            <input type="number" name="year" id="year" class="m-2" style="border-radius: 3px; width: 150px;"
+                   placeholder="Year (2003-2023)" min="2003" max="2023" required>
+            <input type="text" name="pilotInput" id="pilotInput" class="m-2" style="border-radius: 3px; width: 150px;"
+                   placeholder="Pilot" min="1" required>
+            <button type="submit" class="btn btn-primary" class="m-1" name="list" id="list">List</button>
+        </form>
+        <thead>
         <h1 style="text-align: center;">Pilot Season Details</h1>
         <tr>
             <th>Year:</th>
@@ -26,8 +28,8 @@
             <th scope="col">Laps</th>
             <th scope="col">Average Speed</th>
             <th scope="col">Points</th>
-    </thead>
-    <tbody>
+        </thead>
+        <tbody>
 
         <?php
 
@@ -50,11 +52,11 @@
                 $grid = $results->grid;
                 $laps = $results->laps;
                 $status = $results->status;
-                if(isset($results->FastestLap)) {
+                if (isset($results->FastestLap)) {
                     $speed = $results->FastestLap->AverageSpeed->speed;
                 }
                 $topPoints += $points;
-        ?>
+                ?>
                 <tr>
                     <td><?= $round ?: ""; ?></td>
                     <td><?= $givenName . " " . $familyName ?: ""; ?></td>
@@ -68,22 +70,22 @@
                     <td><?= $speed ?: ""; ?></td>
                     <td><?= $points ?: ""; ?></td>
                 </tr>
-        <?php
+                <?php
             }
         }
         ?>
-    </tbody>
-</table>
-<br>
-<center>
-    <table>
-        <tr>
-            <th style="background-color: white; font-size:x-large">Top Points:</th>
-            <td style="color: blue; font-size:x-large"><b><?= $topPoints ?: "";?></b></td>
-        </tr>
+        </tbody>
     </table>
-</center>
-<br>
-</body>
+    <br>
+    <center>
+        <table>
+            <tr>
+                <th style="background-color: white; font-size:x-large">Top Points:</th>
+                <td style="color: blue; font-size:x-large"><b><?= $topPoints ?: ""; ?></b></td>
+            </tr>
+        </table>
+    </center>
+    <br>
+    </body>
 
-<?php include 'partials/footer.php';?>
+<?php include 'partials/footer.php'; ?>

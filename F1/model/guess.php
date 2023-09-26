@@ -1,7 +1,7 @@
 <?php
 
 //Top 5 position
-$url = "http://ergast.com/api/f1/".$yearInput."/".$roundInput."/driverStandings.json";
+$url = "http://ergast.com/api/f1/" . $yearInput . "/" . $roundInput . "/driverStandings.json";
 
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
