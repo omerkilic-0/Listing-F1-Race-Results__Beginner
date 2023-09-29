@@ -17,4 +17,4 @@ if (isset($_POST["list"])) {
     curl_close($ch);
 }
 
-include '../view/guess.php';
+include '../view/content/guess.php';

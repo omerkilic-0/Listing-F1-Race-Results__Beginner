@@ -20,4 +20,4 @@ if (isset($_POST["list"])) {
         echo '<div class="alert alert-danger" role="alert"><center>Wrong round.</center></div>';
     }
 }
-include '../view/round.php'; ?>
+include '../view/content/round.php'; ?>

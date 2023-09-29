@@ -16,16 +16,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="./round.php">Round</a>
+                    <a class="nav-link" href="../round.php">Round</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pitTime.php">Pit Time</a>
+                    <a class="nav-link" href="../pitTime.php">Pit Time</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./guess.php">Guess</a>
+                    <a class="nav-link" href="../guess.php">Guess</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pilot_details.php">Pilot Details</a>
+                    <a class="nav-link" href="../pilot_details.php">Pilot Details</a>
                 </li>
             </ul>
         </div>

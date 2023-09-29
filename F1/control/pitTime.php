@@ -21,4 +21,4 @@ if (isset($_POST["list"])) {
     }
 }
 
-include '../view/pitTime.php';
+include '../view/content/pitTime.php';

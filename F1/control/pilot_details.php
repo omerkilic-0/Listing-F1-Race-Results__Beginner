@@ -17,4 +17,4 @@ if (isset($_POST["list"])) {
     }
     curl_close($ch);
 }
-include '../view/pilot_details.php';
+include '../view/content/pilot_details.php';

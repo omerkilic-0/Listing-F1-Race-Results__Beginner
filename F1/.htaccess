@@ -4,10 +4,5 @@ RewriteBase /
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-DirectoryIndex control/round.php
+DirectoryIndex view/round.php
 
-RewriteRule ^index\.php$ f1/control/round.php [L,R=301]
-RewriteRule ^round\.php$ f1/control/round.php [L,R=301]
-RewriteRule ^guess\.php$ f1/control/guess.php [L,R=301]
-RewriteRule ^pitTime\.php$ f1/control/guess.php [L,R=301]
-RewriteRule ^pilot_details\.php$ f1/control/pilot_details.php [L,R=301]
