@@ -1,4 +1,6 @@
-<?php include 'partials/header.php'; ?>
+<?php
+include __DIR__ . "/../partials/header.php";
+include __DIR__ . "/../partials/navbar.php"; ?>
 
     <table class="table">
         <form method="POST" style="float: left;">
@@ -88,4 +90,4 @@
     <br>
     </body>
 
-<?php include 'partials/footer.php'; ?>
+<?php include __DIR__ . "/../partials/footer.php"; ?>
