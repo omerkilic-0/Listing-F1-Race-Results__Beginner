@@ -1,0 +1,21 @@
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php">Round</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pitTime.php">Pit Time</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="guess.php">Guess</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pilotDetails.php">Pilot Details</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
