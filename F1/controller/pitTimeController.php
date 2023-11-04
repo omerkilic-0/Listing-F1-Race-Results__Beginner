@@ -28,4 +28,4 @@ if (isset($_POST["list"])) {
     }
 }
 
-include "../views/contents/pitTimeContents.php";
+include "views/contents/pitTimeContents.php";

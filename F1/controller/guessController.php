@@ -23,4 +23,4 @@ if (isset($_POST["list"])) {
     curl_close($ch);
 }
 
-include "../views/contents/guessContents.php";
+include "views/contents/guessContents.php";

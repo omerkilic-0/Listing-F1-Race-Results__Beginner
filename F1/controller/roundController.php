@@ -26,4 +26,4 @@ if (isset($_POST["list"])) {
     }
 }
 
-include "../views/contents/roundContents.php";
+include "views/contents/roundContents.php";

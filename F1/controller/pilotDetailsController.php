@@ -24,4 +24,4 @@ if (isset($_POST["list"])) {
     curl_close($ch);
 }
 
-include "../views/contents/pilotDetailsContents.php";
+include "views/contents/pilotDetailsContents.php";
